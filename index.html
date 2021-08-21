@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <script src="assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style>
+body {margin-top: 50px;}
+
+.navbar-brand{
+  font-family: 'Lato', sans-serif;
+  color:grey;
+  font-size: 35px;
+  margin: 0px;
+  padding-right: 10px;
+}
+
+.nav-item{
+  font-size: 20px;
+  padding:7px 0 0 10px;
+}
+
+.hero_text {
+  position: absolute;
+}
+
+#showcase{
+  min-height:600px;
+  background:url("showcase.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: black;
+}
+
+#showcase h1{
+  margin:-150px 0px 0px 0px;
+  font-size:60px;
+  padding: 250px 0px 0px 0px;
+}
+
+#showcase p{
+  font-size:30px;
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+}
+
+@media only screen and (max-width: 320px) {
+  /* For mobile phones: */
+  .hero_text {
+    margin-top: -150px;
+    margin-left: 20px;
+    font-size: 25px;
+}}
+
+</style>
+</head>
+<body>
+<div class="container-fluid">
+  <nav class="navbar navbar-default navbar-expand-md bg-light fixed-top navbar-light">
+      
+    <!-- Button and brand name -->
+    <div class="navbar-header">
+      <a class="navbar-brand text-dark display-4 active" href="" style="margin-left:15px;">Student Survey</a>
+         <!-- Expand button -->
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 235px;">
+      <span class="navbar-toggler-icon"></span></button>
+    </div>
+      <!-- Collapsible navbar items-->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav collapse navbar-collapse">
+         <li class="nav-item"><a class="nav-link text-dark" href="#about">About Us</a></li>
+         <li class="nav-item"><a class="nav-link text-dark" href="#sign-up">Sign-up</a></li>
+         <li class="nav-item"><a class="nav-link text-dark" href="#take-survey">Take Survey</a></li>
+         <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>      
+         <li class="nav-item mr-auto"><a class="nav-link text-dark" href="#about">About Us</a></li>
+        </ul>
+      </div>
+  </nav>
+  
+  <div class="row">
+    <div class="col-lg-12">
+      <section id="showcase">
+      <h1>Survey Tool For Students</h1>
+      <p>Collecting Every Student's <span class="text-primary">Opinion.</span></p>
+      </section>
+    </div>
+  </div>
+  
+  <div class="row header1">
+    <div class="col-sm-12"><h1 class="display-3 text-center text-large mt-3" id="about"><b>Here's what we are</b></h1></div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12"><h1 class="display-5 text-center" id="">ABOUT US</h1></div>
+  </div>
+
+  <div class="row">
+  <div class="col-lg-12">
+    <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, vel! Repellendus perspiciatis earum facilis error, harum nostrum inventore fuga sit, nam ullam corporis ea voluptates consequatur quisquam nobis eos vel!
+    Lorem ipsum uam nobis eos vel!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus provident, repellendus exercitationem inventore minima aliquam ut. Blanditiis numquam cupiditate maiores quasi ut nihil nulla cum beatae ipsam obcaecati. Atque, voluptatibus. orem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus provident, repellendus exercitationem inventore minima aliquam ut. Blanditiis numquam cupiditate maiores quasi ut nihil nulla cum beatae ipsam obcaecati. Atque, voluptatibus. dolor sit, amet consectetur adipisicing elit. Ducimus provident, repellendus exercitationem inventore minima aliquam ut. Blanditiis numquam cupiditate maiores quasi ut nihil nulla cum beatae ipsam obcaecati. Atque, voluptatibus. orem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus provident, repellendus exercitationem inventore minima aliquam ut. Blanditiis numquam cupiditate maiores quasi ut nihil nulla cum beatae ipsam obcaecati. Atque, voluptatibus.
+  </p>
+  </div>
+</div>
+<div class="row header1">
+  <div class="col-sm-12"><h1 class="display-3 text-center text-large" id="sign-up"><b>JOIN US HERE</b></h1></div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12 text-center"><button class="btn btn-lg btn-primary">Sign-up form</button></div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+    <form action="https://w ww.w3schools.com/action_page.php" data-toggle="validator" role="form">
+      <div class="form-group">
+        <label for="name" class="control-label">Full Name</label>
+        <input type="text" class="form-control mt-1 mb-3" id="name" placeholder="Ajibola Segun Emmanuel" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control mt-1 mb-3" id="email" placeholder="Enter email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control mt-1 mb-3" id="pwd" placeholder="Enter password" name="pwd" required>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Remember me</label>
+      </div>
+      <button type="submit" class="btn btn-outline-primary bg-primary text-dark mt-3">Submit</button>
+    </form>
+    </div>
+  </div>
+  <div class="row header3">
+    <div class="col-sm-12"><h1 class="display-3 text-center" id="take-survey">TAKE SURVEY</h1></div>	
+  </div>
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, vel! Repellendus perspiciatis earum facilis error, harum nostrum inventore fuga sit, nam ullam corporis ea voluptates consequatur quisquam nobis eos vel!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus provident, repellendus exercitationem inventore minima aliquam ut. Blanditiis numquam cupiditate maiores quasi ut nihil nulla cum beatae ipsam obcaecati. Atque, voluptatibus.
+  </p>
+  <div class="row header4">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-12"><h1 class="display-3 text-center" id="contact">CONTACT</h1></div>
+    <div class="col-sm-3"></div>	
+  </div>
+</div>
+</body>
+</html>
